@@ -1,0 +1,42 @@
+domain: http://192.168.1.102:8021
+
+# 端口
+port: 8021
+
+# 数据库
+db:
+  debug: true
+  # host: 192.168.1.102
+  host: 127.0.0.1
+  port: 3306
+  user: root
+  password: 123456
+  name: fish-cool
+
+# debug
+debug: true
+
+# 日志
+logger:
+  dir: logs
+  access: access.log
+  error: error.log
+  debug: debug.log
+
+# redis 配置
+redis:
+  # host: 192.168.1.102
+  host: 127.0.0.1
+  port: 6379
+  password: ""
+  db: 2
+  poolsize: 30
+  minidleconns: 30
+
+# session配置
+session: 
+  # session secret key
+  secretKey: agltowdxfqaszrcvmeslbtre
+  # 过期时间(s)
+  expire: 259200
+  
